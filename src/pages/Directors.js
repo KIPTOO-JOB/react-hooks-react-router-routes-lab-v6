@@ -6,7 +6,7 @@ function Directors() {
 	const [directors, setDirectors] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost:3000/directors")
+		fetch("https://challange-db-json.vercel.app/directors")
 			.then((r) => r.json())
 			.then((data) => setDirectors(data))
 			.catch((error) => console.error(error));
